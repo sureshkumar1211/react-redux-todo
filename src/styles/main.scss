@@ -1,0 +1,48 @@
+@import "./variables";
+@import "./header";
+@import "./base";
+
+.todo-controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    &__actions &__icon:not(:last-child){
+        margin-right:10px;
+    }
+}
+
+.c-pointer{
+    cursor: pointer;
+}
+.list-checkbox-section{
+    flex-grow: 1;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+}
+.remove-list{
+    min-width: auto !important;
+}
+
+.icon{
+    &-danger{
+        fill: $red-light !important;
+    }
+    &-success{
+        color:$green-light !important;
+    }
+    &-primary{
+        color:$blue-light !important;
+    }
+}
+
+.list__input{
+    width:80%;
+}
+//COMMON STYLES
+
+.mr-auto{
+    margin-right: auto !important;
+}
+
